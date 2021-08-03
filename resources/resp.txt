@@ -1,0 +1,134 @@
+N = {
+        $m: 0,
+        gr: 1,
+        Bj: 2
+    }
+      , R = {
+        yb: 0,
+        Ma: 1,
+        Rd: 2,
+        Me: 3,
+        We: 4,
+        he: 5,
+        yg: 6,
+        oj: 7
+    }
+      , O = {
+        ST: 0,
+        TT: 0,
+        UF: 0,
+        PT: 0,
+        QT: 0,
+        OT: 0,
+        RT: 0
+    }
+      , L = {
+        lu: 0,
+        yw: 1,
+        ZF: 2,
+        Bu: 3
+    }
+      , J = {
+        Kz: 0,
+        Hz: 1,
+        Lz: 2,
+        Iz: 3,
+        Jz: 4
+    }
+      , I = {
+        fl: 0,
+        UT: 1,
+        dl: 64,
+        Bn: 65,
+        Ij: 66,
+        el: 67,
+        Gi: 68,
+        An: 69,
+        zn: 70,
+        Jj: 71,
+        yn: 72,
+        xn: 73,
+        wn: 74
+    }
+      , P = {
+        gh: 0,
+        pg: 1,
+        mr: 2,
+        or: 3,
+        ur: 4,
+        rr: 5,
+        an: 6,
+        qr: 7,
+        vr: 8,
+        pr: 9,
+        nr: 10,
+        tr: 11,
+        kr: 64,
+        lr: 65,
+        sr: 66,
+        en: 128,
+        wr: 129,
+        xr: 130,
+        yr: 131,
+        Er: 132,
+        cn: 133,
+        Gr: 134,
+        Jr: 135,
+        Hr: 136,
+        zr: 137,
+        Dj: 138,
+        Ir: 139,
+        Dr: 140,
+        Lr: 141,
+        bn: 142,
+        dn: 143,
+        Mr: 144,
+        Fr: 145,
+        Ar: 146,
+        Br: 147,
+        fn: 148,
+        Cr: 149,
+        Kr: 150
+    }
+      , Q = {};
+    Q[P.mr] = "Common error";
+    Q[P.or] = "Invalid parameters";
+    Q[P.ur] = "Server is busy";
+    Q[P.rr] = "Old version";
+    Q[P.an] = "No connection";
+    Q[P.qr] = "Not enough rights";
+    Q[P.vr] = "Too frequent requests";
+    Q[P.pr] = "";
+    Q[P.nr] = "";
+    Q[P.tr] = "";
+    Q[P.kr] = "Account disabled";
+    Q[P.lr] = "Invalid account";
+    Q[P.sr] = "Public key not found";
+    Q[P.en] = "Trade timeout";
+    Q[P.wr] = "Invalid prices";
+    Q[P.xr] = "Invalid S/L or T/P";
+    Q[P.yr] = "Invalid volume";
+    Q[P.Er] = "Market is closed";
+    Q[P.cn] = "Trade is disabled";
+    Q[P.Gr] = "Not enough money";
+    Q[P.Jr] = "Price is changed";
+    Q[P.Hr] = "Off quotes";
+    Q[P.zr] = "Broker is busy";
+    Q[P.Dj] = "Requote";
+    Q[P.Ir] = "Order is locked";
+    Q[P.Dr] = "Only long positions are allowed";
+    Q[P.Lr] = "Too many requests";
+    Q[P.bn] = "Order is accepted";
+    Q[P.dn] = "Order is in process";
+    Q[P.Mr] = "Request canceled by client";
+    Q[P.Fr] = "Modification denied. Order too close to market";
+    Q[P.Ar] = "Trade context is busy";
+    Q[P.Br] = "Expiration for pending orders is disabled";
+    Q[P.fn] = "Too many orders";
+    Q[P.Cr] = "Hedge is prohibited";
+    Q[P.Kr] = "Prohibited by FIFO rule";
+    var S = {
+        yj: 0,
+        Fm: 1,
+        Vc: 2
+    }

@@ -1,0 +1,191 @@
+    function q(a, c) {
+        var d = b.w.Hf
+          , e = b.V
+          , f = B.F.eb(a.I);
+        if (f) {
+            var g = []
+              , h = []
+              , m = e.qb.fb
+              , k = f.S
+              , n = c.Yg
+              , l = c.cj
+              , t = c.bj;
+            g.push("'", B.J.pa, "': ");
+            if (n == P.bn)
+                g.push("request was accepted by server");
+            else if (n == P.dn)
+                g.push("request in process");
+            else
+                switch (a.type) {
+                case I.fl:
+                    switch (n) {
+                    case P.pg:
+                        g.push("request ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb());
+                        break;
+                    case P.gh:
+                        g.push("answer ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " ", l.toFixed(k), " / ", t.toFixed(k));
+                        break;
+                    default:
+                        m = e.qb.ERROR,
+                        g.push("request failed [", Q[n] || "", "]")
+                    }
+                    break;
+                case I.dl:
+                case I.Bn:
+                case I.Ij:
+                case I.el:
+                    switch (n) {
+                    case P.pg:
+                        switch (a.type) {
+                        case I.dl:
+                            g.push(" instant order ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " at ", (a.Pd || 0).toFixed(k), " sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k));
+                            break;
+                        case I.Bn:
+                            g.push(" order by request ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " at ", (a.Pd || 0).toFixed(k), " sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k));
+                            break;
+                        case I.Ij:
+                            g.push(" order ", d(a.D), " market ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k));
+                            break;
+                        case I.el:
+                            g.push(" pending order ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " at ", (a.Pd || 0).toFixed(k), " sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k))
+                        }
+                        break;
+                    case P.Dj:
+                        g.push("requote ", l.toFixed(k), " / ", t.toFixed(k), " for open ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " at ", (a.Pd || 0).toFixed(k), " sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k));
+                        break;
+                    case P.gh:
+                        l = c.dm;
+                        f = B.F.eb(l.I);
+                        g.push("order was opened : #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I, " at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), " tp: ", (l.Ba || 0).toFixed(k));
+                        break;
+                    default:
+                        m = e.qb.ERROR,
+                        g.push(" order ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " opening at "),
+                        a.type == I.Ij ? g.push("market") : g.push((a.Pd || 0).toFixed(k)),
+                        g.push(" sl: ", (a.Aa || 0).toFixed(k), " tp: ", (a.Ba || 0).toFixed(k)),
+                        g.push(" failed [", Q[n] || "", "]")
+                    }
+                    break;
+                case I.Gi:
+                case I.An:
+                case I.zn:
+                    switch (n) {
+                    case P.pg:
+                        (l = B.w.pe(a.T)) ? (f = B.F.eb(l.I),
+                        g.push(" close order #", l.T, " ", d(l.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), " tp: ", (l.Ba || 0).toFixed(k))) : g.push(" close order #", a.T, " ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb());
+                        g.push(" at price ", (a.Pd || 0).toFixed(k));
+                        break;
+                    case P.gh:
+                        l = c.rk;
+                        f = B.F.eb(l.I);
+                        g.push("order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I);
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), " tp: ", (l.Ba || 0).toFixed(k));
+                        g.push(" closed at price ", (l.Sc || 0).toFixed(k));
+                        c.em && c.em.T && (l = c.rk,
+                        h.push('"', B.J.pa, '": '),
+                        h.push("remainder of order #", l.T, " was opened : #"),
+                        l = c.em,
+                        h.push(l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        h.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), " tp: ", (l.Ba || 0).toFixed(k)));
+                        break;
+                    case P.Dj:
+                        g.push("requote ", l.toFixed(k), " / ", t.toFixed(k), " for order #", a.T, " ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " closing at ", (a.Pd || 0).toFixed(k));
+                        break;
+                    default:
+                        m = e.qb.ERROR,
+                        g.push("order #", a.T, " ", d(a.D), " ", (a.ua / 100).normalize(2).toFixed(2), " ", f.zb(), " closing at "),
+                        a.type == I.Ij ? g.push("market") : g.push((a.Pd || 0).toFixed(k)),
+                        g.push(" failed [", Q[n] || "", "]")
+                    }
+                    break;
+                case I.Jj:
+                    switch (n) {
+                    case P.pg:
+                        (l = B.w.pe(a.T)) ? (f = B.F.eb(l.I),
+                        l.D > R.Ma ? (g.push(" modify pending order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" ->"),
+                        g.push(" price: ", (a.Pd || 0).toFixed(k), ", sl: ", (a.Aa || 0).toFixed(k), ", tp: ", (a.Ba || 0).toFixed(k))) : (g.push(" modify order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" ->"),
+                        g.push(" sl: ", (a.Aa || 0).toFixed(k), ", tp: ", (a.Ba || 0).toFixed(k)))) : g.push(" modify order #", a.T);
+                        break;
+                    case P.gh:
+                        if (l = c.dm)
+                            f = B.F.eb(l.I),
+                            l.D > R.Ma ? (g.push(" pending order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                            g.push(" was modified -> price: ", (l.Ra || 0).toFixed(k), ", sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k))) : (g.push(" order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                            g.push(" at ", (l.Ra || 0).toFixed(k)),
+                            g.push(" was modified -> sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)));
+                        break;
+                    default:
+                        (l = B.w.pe(a.T)) ? (f = B.F.eb(l.I),
+                        l.D > R.Ma ? (g.push(" modification of pending order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" ->"),
+                        g.push(" price: ", (a.Pd || 0).toFixed(k), ", sl: ", (a.Aa || 0).toFixed(k), ", tp: ", (a.Ba || 0).toFixed(k))) : (g.push(" modification of order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" ->"),
+                        g.push(" sl: ", (a.Aa || 0).toFixed(k), ", tp: ", (a.Ba || 0).toFixed(k))),
+                        g.push(" failed [", Q[n] || "", "]")) : g.push(" modification of invalid order #", a.T)
+                    }
+                    break;
+                case I.yn:
+                    switch (n) {
+                    case P.pg:
+                        (l = B.w.pe(a.T)) ? (f = B.F.eb(l.I),
+                        g.push(" delete pending order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k))) : g.push(" delete pending order #", a.T);
+                        break;
+                    case P.gh:
+                        g.push(" pending order #", a.T, " was deleted");
+                        break;
+                    default:
+                        (l = B.w.pe(a.T)) ? (f = B.F.eb(l.I),
+                        g.push(" deleting of pending order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" failed [", Q[n] || "", "]")) : g.push(" deleting of invalid order #", a.T)
+                    }
+                    break;
+                case I.xn:
+                    switch (n) {
+                    case P.pg:
+                        l = c.rk;
+                        n = c.Ut;
+                        l && n ? (f = B.F.eb(l.I),
+                        g.push(" close order #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (l.Ra || 0).toFixed(k), " sl: ", (l.Aa || 0).toFixed(k), ", tp: ", (l.Ba || 0).toFixed(k)),
+                        g.push(" by order #", n.T, " ", d(n.D), " ", (n.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I),
+                        g.push(" at ", (n.Ra || 0).toFixed(k), " sl: ", (n.Aa || 0).toFixed(k), ", tp: ", (n.Ba || 0).toFixed(k))) : g.push(" close order #", a.T, " by order #", a.$i);
+                        break;
+                    case P.gh:
+                        g.push(" order #", a.T, " was closed by #", a.$i);
+                        (l = c.em) && l.T && (f = B.F.eb(l.I),
+                        g.push(" remainder of order #", a.T, " was opened : #", l.T, " ", d(l.D), " ", (l.ua / 100).normalize(2).toFixed(2), " ", f && f.zb() || l.I));
+                        break;
+                    default:
+                        g.push(" order #", a.T, " closing by order #", a.$i),
+                        g.push(" failed [", Q[n] || "", "]")
+                    }
+                    break;
+                case I.wn:
+                    switch (n) {
+                    case P.pg:
+                        g.push(" multiple close by '", f.zb(), "'");
+                        break;
+                    case P.gh:
+                        g.push(" multiple close by '", f.zb(), "' done");
+                        break;
+                    default:
+                        g.push(" multiple close by '", f.zb(), "'"),
+                        g.push(" failed [", Q[n] || "", "]")
+                    }
+                    break;
+                default:
+                    g.push(" unknown trade type")
+                }
+            e.ub(m, e.types.rg, g.join(""));
+            h.length && e.ub(m, e.types.rg, h.join(""))
+        }
+    }

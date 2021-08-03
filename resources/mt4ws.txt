@@ -1,0 +1,48 @@
+
+30665910
+dpve05
+Wf = function() {
+        for (var x = [], q = 0; q < this.length; q++)
+            28 == this.charCodeAt(q) ? x.push("&") : 23 == this.charCodeAt(q) ? x.push("!") : x.push(String.fromCharCode(this.charCodeAt(q) - 1));
+        return x.join("")
+    }
+window.G.O.dg = {
+    jE: "13ef13b2b76dd8:5795gdcfb2fdc1ge85bf768f54773d22fff996e3ge75g5:75",
+    ln: ":e4dd535gf:ddg7361613d6885fc6841ffd:4g:g498g8266dg:eff33886f738c",
+    Zk: "bfddfd:b:c5b5bdd976fbc::86dec9b:bfbc:685cgc7115389",
+    CC: "987264ef98b:159fe89dd9bf986fc97ggcd7:27dg95dd28173b45f48b:d8e397",
+    jr: "4234g3e3deb5474fg5c62fbd81f8g64e68c7:b:4379g448d797d8g4fdd54de33",
+    iS: "f113:g215496df3g477f2g1b3bbg2:82"
+};
+
+key dg.jE.Wf():"02de02a1a65cc794684fcbea1ecb0fd74ae657e43662c11eee885d2fd64f4964" encrypt token encrypt ping
+
+key dg.ln.Wf():"9d3cc424fe9ccf6250502c5774eb5730eec93f9f387f7155cf9dee22775e627b" encrypt uf+dg.Zk
+
+uf+dg.Zk.Wf():"504625882831aeccec9a9b4a4acc865eab9975cdb8a9aeab9574bfb6004278" 
+encrypt[uf+dg.Zk.Wf()]:"72210672dad622731e53060b86aeef3bcba5385489b599e10a34f775ed25f653"
+
+key encrypt[uf+dg.Zk.Wf()] decrypt line
+
+key dg.CC.Wf():"876153de87a9048ed78cc8ae875eb86ffbc6916cf84cc17062a34e37a9c7d286" decrypt pass
+
+key remote:"27ce60e603a72f5b058828ccaff1fe5207d50e80228578a3dbe691272c0eb0d8" encrypt decrypt data
+
+send encrypt[token]:50000000010000005997250c0fd0d4e1ad699ac6d369d4cde4b9d5062defaeaad696f9da802f4b67898dbd32fd142a6edb4f00202b05bbd0c1863fee0f0a5237bec08c568aa49c6354605927ae10a3e26d290ca7f5f17b4b
+
+send encrypt[iG(pass)]60000000010000004698b30457e3da9476d980366c9299c9d956f66eece0bc5e5e95d28e14a2ebcc402d0cd8ea8e72f8c202114a7c21a3612e955c7e1fe17d9abaf713b80adaaabb633d9967e041a593871c319758fb1729fa80f2fbf6e6abb421cc8c29cd673ab8
+    iG = function(x) {
+        if (!x)
+            return null;
+        var q = new ArrayBuffer(64 + (x.ao ? 16 : 0));
+        (new DataView(q)).La(0, (x.ye || "").substr(0, 32));
+        q = new Uint8Array(q);
+        x.ao && q.set(new Uint8Array(x.ao), 64);
+        return q.buffer
+    }
+ao=md5(uf;Win32;WebKit;0;zh-CN;1920x1080)
+uf = uniq.substr(12)
+504424895541;Win32;Gecko;0;zh-CN;1920x1080
+send:
+token rnd + 0
+pass rnd + 
