@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "mdZLV/Udh4ht8+XLDMTcg9PLr/0yycwP4mh+rYFrzsCP6zUS0A+ubmr+E4ijAoSsabwsgmnZbGP+Cu4vXQTe5A==",
+  "success": true,
+  "projectFilePath": "D:\\gitee\\n-terminal\\nTerminal\\nTerminal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\javascriptengineswitcher.chakracore\\3.5.6\\javascriptengineswitcher.chakracore.3.5.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.linux-x64\\3.5.6\\javascriptengineswitcher.chakracore.native.linux-x64.3.5.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.win-x64\\3.5.6\\javascriptengineswitcher.chakracore.native.win-x64.3.5.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\javascriptengineswitcher.core\\3.3.0\\javascriptengineswitcher.core.3.3.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

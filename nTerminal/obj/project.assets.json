@@ -1,0 +1,318 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AdvancedStringBuilder/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {}
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore/3.5.6": {
+        "type": "package",
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.0",
+          "JavaScriptEngineSwitcher.Core": "3.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/JavaScriptEngineSwitcher.ChakraCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/JavaScriptEngineSwitcher.ChakraCore.dll": {}
+        },
+        "resource": {
+          "lib/netcoreapp2.1/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll": {
+            "locale": "ru-ru"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.5.6": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libChakraCore.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.5.6": {
+        "type": "package",
+        "build": {
+          "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/ChakraCore.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.Core/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll": {
+            "locale": "ru-ru"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AdvancedStringBuilder/0.1.0": {
+      "sha512": "IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
+      "type": "package",
+      "path": "advancedstringbuilder/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "advancedstringbuilder.0.1.0.nupkg.sha512",
+        "advancedstringbuilder.nuspec",
+        "lib/net40-client/AdvancedStringBuilder.dll",
+        "lib/net40-client/AdvancedStringBuilder.xml",
+        "lib/net45/AdvancedStringBuilder.dll",
+        "lib/net45/AdvancedStringBuilder.xml",
+        "lib/netstandard1.0/AdvancedStringBuilder.dll",
+        "lib/netstandard1.0/AdvancedStringBuilder.xml",
+        "lib/netstandard2.0/AdvancedStringBuilder.dll",
+        "lib/netstandard2.0/AdvancedStringBuilder.xml"
+      ]
+    },
+    "JavaScriptEngineSwitcher.ChakraCore/3.5.6": {
+      "sha512": "ZI5eYloryvIYpxKYnuZ2G4nz7VZ9TReHFJh6F6W34S9GGrqJ0Ojq9Pz9xi6+19rBAeHkAvX+kBtwUtTiAbVjRg==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore/3.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "advanced-string-builder-license.txt",
+        "chakra-samples-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.chakracore.3.5.6.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.nuspec",
+        "jsrt-dotnet-license.txt",
+        "lib/net40-client/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/net40-client/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/net40-client/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/net45/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/net45/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/net45/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/net471/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/net471/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/net471/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/netcoreapp2.1/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/netcoreapp2.1/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/netcoreapp2.1/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/netstandard1.3/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/netstandard2.0/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "lib/netstandard2.1/JavaScriptEngineSwitcher.ChakraCore.dll",
+        "lib/netstandard2.1/JavaScriptEngineSwitcher.ChakraCore.xml",
+        "lib/netstandard2.1/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll",
+        "polyfills-for-old-dot-net-license.txt",
+        "readme.txt"
+      ]
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.5.6": {
+      "sha512": "uNtz8X5Dw3iIEIOHwRSBTloAxtNLvWvd/gPxEbout2k5b9wdB55UUFA3MFQI3aCXVLw2cs3W7X8mZsFZc5rOHg==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.linux-x64/3.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "chakra-core-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.chakracore.native.linux-x64.3.5.6.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.linux-x64.nuspec",
+        "readme.txt",
+        "runtimes/linux-x64/native/libChakraCore.so"
+      ]
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.5.6": {
+      "sha512": "uen/cyr7ssqSTu8+uKVHCd4e2ol8uiR2lrUkUnts2G+4ze9CokT9h1WmZW2UDlHMkwHlQUDhtoo3J1ketRmCoQ==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.win-x64/3.5.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props",
+        "chakra-core-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.chakracore.native.win-x64.3.5.6.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.win-x64.nuspec",
+        "readme.txt",
+        "runtimes/win-x64/native/ChakraCore.dll",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "JavaScriptEngineSwitcher.Core/3.3.0": {
+      "sha512": "aY5dOsBsB7MO2twVRlRcvHBFdkXptIwjSobjPis+DiUi5Cq2YU6M8ICHzaQ1ZXHl7VyWrBMV7cTn98ZrI5ZMHQ==",
+      "type": "package",
+      "path": "javascriptengineswitcher.core/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "advanced-string-builder-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.core.3.3.0.nupkg.sha512",
+        "javascriptengineswitcher.core.nuspec",
+        "lib/net40-client/JavaScriptEngineSwitcher.Core.dll",
+        "lib/net40-client/JavaScriptEngineSwitcher.Core.xml",
+        "lib/net40-client/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll",
+        "lib/net45/JavaScriptEngineSwitcher.Core.dll",
+        "lib/net45/JavaScriptEngineSwitcher.Core.xml",
+        "lib/net45/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.Core.dll",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.Core.xml",
+        "lib/netstandard1.3/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.xml",
+        "lib/netstandard2.0/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll",
+        "readme.txt"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "JavaScriptEngineSwitcher.ChakraCore >= 3.5.6",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64 >= 3.5.6",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64 >= 3.5.6",
+      "Newtonsoft.Json >= 12.0.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\gitee\\n-terminal\\nTerminal\\nTerminal.csproj",
+      "projectName": "nTerminal",
+      "projectPath": "D:\\gitee\\n-terminal\\nTerminal\\nTerminal.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\gitee\\n-terminal\\nTerminal\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "JavaScriptEngineSwitcher.ChakraCore": {
+            "target": "Package",
+            "version": "[3.5.6, )"
+          },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": {
+            "target": "Package",
+            "version": "[3.5.6, )"
+          },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+            "target": "Package",
+            "version": "[3.5.6, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
