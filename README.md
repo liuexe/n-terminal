@@ -1,4 +1,7 @@
 # nTerminal
+A multi-account ordering terminal written in C# to connect to the MT4 web version via WebSocket.
+It be tested on Vultr's New York VPS, but is not guaranteed to be available now and in the future.
+[Vultr VPS free $100 Credit to Get Started](https://www.vultr.com/?ref=8382011-6G)
 
 #### 介绍
 C#写的通过WebSocket连接MT4网页版的多账户下单终端。
